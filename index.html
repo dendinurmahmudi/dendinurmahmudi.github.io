@@ -2725,18 +2725,27 @@
         msgEl.textContent = '❌ Namanya diisi ya!';
         msgEl.classList.add('show');
         document.getElementById('submit-356035').value = 'Send';
+        setTimeout(() => {
+          msgEl.classList.remove('show');
+        }, 5000);
         return;
       }
       if(wdp == ''){
         msgEl.textContent = '❌ Ucapannya diisi!';
         msgEl.classList.add('show');
         document.getElementById('submit-356035').value = 'Send';
+        setTimeout(() => {
+          msgEl.classList.remove('show');
+        }, 5000);
         return;
       }
       if(konfirmasi == ''){
         msgEl.textContent = '❌ Konfirmasi kehadiran dipilih ya!';
         msgEl.classList.add('show');
         document.getElementById('submit-356035').value = 'Send';
+        setTimeout(() => {
+          msgEl.classList.remove('show');
+        }, 5000);
         return;
       }
 
@@ -2764,15 +2773,24 @@
           msgEl.textContent = '🎉 Terima kasih, ucapan kamu berhasil dikirim!';
           msgEl.classList.add('show');
           e.target.reset();
+          setTimeout(() => {
+            msgEl.classList.remove('show');
+          }, 5000);
         } else {
           msgEl.textContent = '⚠️ Terjadi kesalahan langsung ucapkan dari WA saja😅';
           msgEl.classList.add('show');
+          setTimeout(() => {
+            msgEl.classList.remove('show');
+          }, 5000);
           console.log(text);
         }
         document.getElementById('submit-356035').value = 'Send';
       } catch (err) {
         msgEl.textContent = '❌ Terjadi kesalahan langsung ucapkan dari WA saja😅';
         msgEl.classList.add('show');
+        setTimeout(() => {
+          msgEl.classList.remove('show');
+        }, 5000);
         console.error(err);
         document.getElementById('submit-356035').value = 'Send';
       }
