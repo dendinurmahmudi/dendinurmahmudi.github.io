@@ -908,7 +908,7 @@
             </div>
           </div>
           <div class="elementor-element elementor-element-8dbdf28 wdp-sticky-section-no elementor-widget elementor-widget-text-editor" data-id="8dbdf28" data-element_type="widget" data-aos="fade" data-aos-offset="0" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="center" data-widget_type="text-editor.default">
-            <div class="elementor-widget-container"> Anak pertama dari tiga bersaudara : <br /> Putri Bapak Jumari dan Ibu Sri Sumartini </div>
+            <div class="elementor-widget-container"> Anak pertama dari Ibu Sri Sumartini dan Bapak Jumari </div>
           </div>
           <div data-dce-background-color="#02010100" class="elementor-element elementor-element-4e23e79 elementor-align-center wdp-sticky-section-no elementor-widget elementor-widget-button" data-id="4e23e79" data-element_type="widget" data-aos="fade" data-aos-offset="0" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="center" data-widget_type="button.default">
             <div class="elementor-widget-container">
@@ -942,7 +942,7 @@
             </div>
           </div>
           <div class="elementor-element elementor-element-2e161b6 wdp-sticky-section-no elementor-widget elementor-widget-text-editor" data-id="2e161b6" data-element_type="widget" data-aos="fade" data-aos-offset="0" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="center" data-widget_type="text-editor.default">
-            <div class="elementor-widget-container"> Anak kedua dari tiga bersaudara : <br /> Putra dari Bapak Ade Koman dan Ibu Nurjanah </div>
+            <div class="elementor-widget-container"> Anak kedua dari Ibu Nurjanah dan Bapak Ade Koman </div>
           </div>
           <div data-dce-background-color="#02010100" class="elementor-element elementor-element-f41fdc8 elementor-align-center wdp-sticky-section-no elementor-widget elementor-widget-button" data-id="f41fdc8" data-element_type="widget" data-aos="fade" data-aos-offset="0" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="center" data-widget_type="button.default">
             <div class="elementor-widget-container">
@@ -1011,7 +1011,7 @@
               </div>
               <div class="elementor-element elementor-element-da101f3 dce_masking-none wdp-sticky-section-no elementor-widget elementor-widget-image" data-id="da101f3" data-element_type="widget" data-widget_type="image.default">
                 <div class="elementor-widget-container" data-aos="fade" data-aos-offset="0" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="center" data-widget_type="image.default">
-                  <img loading="lazy" decoding="async" width="1600" height="1066" src="img/12RP_PUTIH.jpg" class="attachment-large size-large wp-image-356444" alt="" />
+                  <img loading="lazy" decoding="async" width="1600" height="1066" src="img/12RP_PUTIH.jpg" class="attachment-large size-large wp-image-356444" alt="" style="height: 90% !important;"/>
                 </div>
               </div>
               <div class="elementor-element elementor-element-566ed31 elementor-widget-divider--view-line wdp-sticky-section-no elementor-widget elementor-widget-divider" data-id="566ed31" data-element_type="widget" data-widget_type="divider.default">
@@ -1440,119 +1440,119 @@
                     /* Tombol "Load More" dan "Close" */
                   </style>
                   <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                      const itemsPerPage = 5;
-                      const komentarContainer = document.getElementById("komentar-container");
-                      const loadMoreBtn = document.getElementById("load-more-btn");
-                      const closeBtn = document.getElementById("close-btn");
-                      let currentlyVisible = 0;
+                    // document.addEventListener("DOMContentLoaded", function() {
+                    //   const itemsPerPage = 5;
+                    //   const komentarContainer = document.getElementById("komentar-container");
+                    //   const loadMoreBtn = document.getElementById("load-more-btn");
+                    //   const closeBtn = document.getElementById("close-btn");
+                    //   let currentlyVisible = 0;
 
-                      function removeNestedContainers() {
-                        const nestedContainers = komentarContainer.querySelectorAll("#komentar-container");
-                        nestedContainers.forEach(nested => {
-                          komentarContainer.parentElement.appendChild(nested);
-                          const nestedItems = nested.querySelectorAll(".komentar-item");
-                          nestedItems.forEach(item => {
-                            item.classList.add("show");
-                          });
-                        });
-                      }
+                    //   function removeNestedContainers() {
+                    //     const nestedContainers = komentarContainer.querySelectorAll("#komentar-container");
+                    //     nestedContainers.forEach(nested => {
+                    //       komentarContainer.parentElement.appendChild(nested);
+                    //       const nestedItems = nested.querySelectorAll(".komentar-item");
+                    //       nestedItems.forEach(item => {
+                    //         item.classList.add("show");
+                    //       });
+                    //     });
+                    //   }
 
-                      function showAllCommentsInDesktop() {
-                        if (window.innerWidth >= 768) {
-                          const items = komentarContainer.querySelectorAll(".komentar-item");
-                          items.forEach(item => {
-                            item.classList.add("show");
-                          });
-                          loadMoreBtn.style.display = "none";
-                          closeBtn.style.display = "none";
-                        } else {
-                          updateComments();
-                        }
-                      }
+                    //   function showAllCommentsInDesktop() {
+                    //     if (window.innerWidth >= 768) {
+                    //       const items = komentarContainer.querySelectorAll(".komentar-item");
+                    //       items.forEach(item => {
+                    //         item.classList.add("show");
+                    //       });
+                    //       loadMoreBtn.style.display = "none";
+                    //       closeBtn.style.display = "none";
+                    //     } else {
+                    //       updateComments();
+                    //     }
+                    //   }
 
-                      function updateComments() {
-                        removeNestedContainers();
-                        const items = komentarContainer.querySelectorAll(".komentar-item");
-                        if (window.innerWidth >= 768) {
-                          items.forEach(item => item.classList.add("show"));
-                          loadMoreBtn.style.display = "none";
-                          closeBtn.style.display = "none";
-                          return;
-                        }
-                        items.forEach((item, index) => {
-                          if (index < currentlyVisible) {
-                            item.classList.add("show");
-                          } else {
-                            item.classList.remove("show");
-                          }
-                        });
-                        if (currentlyVisible > itemsPerPage) {
-                          closeBtn.style.display = "block";
-                        } else {
-                          closeBtn.style.display = "none";
-                        }
-                        if (currentlyVisible >= items.length || items.length === 0) {
-                          loadMoreBtn.style.display = "none";
-                        } else {
-                          loadMoreBtn.style.display = "block";
-                        }
-                      }
+                    //   function updateComments() {
+                    //     removeNestedContainers();
+                    //     const items = komentarContainer.querySelectorAll(".komentar-item");
+                    //     if (window.innerWidth >= 768) {
+                    //       items.forEach(item => item.classList.add("show"));
+                    //       loadMoreBtn.style.display = "none";
+                    //       closeBtn.style.display = "none";
+                    //       return;
+                    //     }
+                    //     items.forEach((item, index) => {
+                    //       if (index < currentlyVisible) {
+                    //         item.classList.add("show");
+                    //       } else {
+                    //         item.classList.remove("show");
+                    //       }
+                    //     });
+                    //     if (currentlyVisible > itemsPerPage) {
+                    //       closeBtn.style.display = "block";
+                    //     } else {
+                    //       closeBtn.style.display = "none";
+                    //     }
+                    //     if (currentlyVisible >= items.length || items.length === 0) {
+                    //       loadMoreBtn.style.display = "none";
+                    //     } else {
+                    //       loadMoreBtn.style.display = "block";
+                    //     }
+                    //   }
 
-                      function loadMoreComments() {
-                        const items = komentarContainer.querySelectorAll(".komentar-item");
-                        const nextVisibleCount = currentlyVisible + itemsPerPage;
-                        for (let i = currentlyVisible; i < nextVisibleCount; i++) {
-                          if (items[i]) {
-                            items[i].classList.add("show");
-                          }
-                        }
-                        currentlyVisible = Math.min(nextVisibleCount, items.length);
-                        updateComments();
-                        saveVisibleComments();
-                      }
+                    //   function loadMoreComments() {
+                    //     const items = komentarContainer.querySelectorAll(".komentar-item");
+                    //     const nextVisibleCount = currentlyVisible + itemsPerPage;
+                    //     for (let i = currentlyVisible; i < nextVisibleCount; i++) {
+                    //       if (items[i]) {
+                    //         items[i].classList.add("show");
+                    //       }
+                    //     }
+                    //     currentlyVisible = Math.min(nextVisibleCount, items.length);
+                    //     updateComments();
+                    //     saveVisibleComments();
+                    //   }
 
-                      function closeComments() {
-                        currentlyVisible = itemsPerPage;
-                        const items = komentarContainer.querySelectorAll(".komentar-item");
-                        items.forEach((item, index) => {
-                          if (index < itemsPerPage) {
-                            item.classList.add("show");
-                          } else {
-                            item.classList.remove("show");
-                          }
-                        });
-                        loadMoreBtn.style.display = "block";
-                        closeBtn.style.display = "none";
-                        saveVisibleComments();
-                      }
+                    //   function closeComments() {
+                    //     currentlyVisible = itemsPerPage;
+                    //     const items = komentarContainer.querySelectorAll(".komentar-item");
+                    //     items.forEach((item, index) => {
+                    //       if (index < itemsPerPage) {
+                    //         item.classList.add("show");
+                    //       } else {
+                    //         item.classList.remove("show");
+                    //       }
+                    //     });
+                    //     loadMoreBtn.style.display = "block";
+                    //     closeBtn.style.display = "none";
+                    //     saveVisibleComments();
+                    //   }
 
-                      function saveVisibleComments() {
-                        const items = komentarContainer.querySelectorAll(".komentar-item");
-                        const visibleIndexes = [];
-                        items.forEach((item, index) => {
-                          if (item.classList.contains("show")) {
-                            visibleIndexes.push(index);
-                          }
-                        });
-                        localStorage.setItem("visibleComments", JSON.stringify(visibleIndexes));
-                      }
-                      let resizeTimeout;
-                      window.addEventListener("resize", function() {
-                        clearTimeout(resizeTimeout);
-                        resizeTimeout = setTimeout(function() {
-                          showAllCommentsInDesktop();
-                        }, 250);
-                      });
-                      if (window.innerWidth < 768) {
-                        currentlyVisible = itemsPerPage;
-                      }
-                      // Tambahkan event listener untuk tombol close
-                      closeBtn.addEventListener("click", closeComments);
-                      loadMoreBtn.addEventListener("click", loadMoreComments);
-                      showAllCommentsInDesktop();
-                      updateComments();
-                    });
+                    //   function saveVisibleComments() {
+                    //     const items = komentarContainer.querySelectorAll(".komentar-item");
+                    //     const visibleIndexes = [];
+                    //     items.forEach((item, index) => {
+                    //       if (item.classList.contains("show")) {
+                    //         visibleIndexes.push(index);
+                    //       }
+                    //     });
+                    //     localStorage.setItem("visibleComments", JSON.stringify(visibleIndexes));
+                    //   }
+                    //   let resizeTimeout;
+                    //   window.addEventListener("resize", function() {
+                    //     clearTimeout(resizeTimeout);
+                    //     resizeTimeout = setTimeout(function() {
+                    //       showAllCommentsInDesktop();
+                    //     }, 250);
+                    //   });
+                    //   if (window.innerWidth < 768) {
+                    //     currentlyVisible = itemsPerPage;
+                    //   }
+                    //   // Tambahkan event listener untuk tombol close
+                    //   closeBtn.addEventListener("click", closeComments);
+                    //   loadMoreBtn.addEventListener("click", loadMoreComments);
+                    //   showAllCommentsInDesktop();
+                    //   updateComments();
+                    // });
                   </script>
                 </div>
               </div>
@@ -2888,15 +2888,18 @@
 
         if (text === 'success') {
           fetchUcapan();
-          document.getElementById('message').textContent = '🎉 Terima kasih, ucapan kamu berhasil dikirim!';
+          msgEl.textContent = '🎉 Terima kasih, ucapan kamu berhasil dikirim!';
+          msgEl.classList.add('show');
           e.target.reset();
         } else {
-          document.getElementById('message').textContent = '⚠️ Terjadi kesalahan langsung ucapkan dari WA saja😅';
+          msgEl.textContent = '⚠️ Terjadi kesalahan langsung ucapkan dari WA saja😅';
+          msgEl.classList.add('show');
           console.log(text);
         }
         document.getElementById('submit-356035').value = 'Send';
       } catch (err) {
-        document.getElementById('message').textContent = '❌ Terjadi kesalahan langsung ucapkan dari WA saja😅';
+        msgEl.textContent = '❌ Terjadi kesalahan langsung ucapkan dari WA saja😅';
+        msgEl.classList.add('show');
         console.error(err);
         document.getElementById('submit-356035').value = 'Send';
       }
