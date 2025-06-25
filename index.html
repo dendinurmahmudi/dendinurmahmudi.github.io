@@ -2114,14 +2114,14 @@
       </div>
     </div>
     <script>
-      const wdpAudio = document.body.contains(document.getElementById('song')) ? document.getElementById('song') : false;
+      
       const wdpVideo = document.body.contains(document.getElementById('video')) ? document.getElementById('video') : false;
-      const playAudio = () => {
+      playAudio = () => {
         if (wdpAudio) {
           wdpAudio.play();
         }
       }
-      const pauseAudio = () => {
+      pauseAudio = () => {
         if (wdpAudio) {
           wdpAudio.pause();
         }
@@ -2149,14 +2149,6 @@
           pauseAudioOnVideoPlay();
         }
       })
-      /*ANIMASI SETELAH COVER*/
-      document.querySelector('.wdp-button-wrapper button').addEventListener('click', function() {
-        document.querySelector('.firstColumn').style.display = 'block';
-      });
-      //text error name rsvp
-      jQuery(document).ready(function($) {
-        $('.wdp-error-info-name').text('maksimal 25 karakter hindari menggunakan tanda titik');
-      });
     </script>
     <script>
         (function($) {
@@ -2594,7 +2586,7 @@
     <script id="editor-js-after">
       window.wp.oldEditor = window.wp.editor;
     </script>
-    <script src="https://groovepublic.com/wp-includes/js/quicktags.min.js?ver=6.5.5" id="quicktags-js"></script>
+
     <script src="https://groovepublic.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
     <script src="https://groovepublic.com/wp-admin/js/common.min.js?ver=6.5.5" id="common-js"></script>
     <script src="https://groovepublic.com/wp-includes/js/wplink.min.js?ver=6.5.5" id="wplink-js"></script>
@@ -2843,15 +2835,15 @@
         return false;
       }
     });
-
     setInterval(function () {
-    const before = new Date();
-    debugger; // ini akan melambat saat DevTools aktif
-    const after = new Date();
-    if (after - before > 100) {
-      window.location.href = "https://www.google.com";
-    }
-  }, 1000);
+      const before = new Date();
+      debugger; // ini akan melambat saat DevTools aktif
+      const after = new Date();
+      if (after - before > 100) {
+        window.location.href = "https://www.google.com";
+      }
+    }, 1000);
+
   </script>
   </body>
 </html>
