@@ -3,6 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <style type="text/css">
+      .eicon-close {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      .eicon-close::before,
+      .eicon-close::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2px;
+        height: 24px;
+        background-color: #333;
+        transform-origin: center;
+      }
+
+      .eicon-close::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      .eicon-close::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      .eicon-frame-expand, .eicon-chevron-right, .eicon-chevron-left{
+        display: none !important;
+      }
       .disabled-select {
         pointer-events: none;  /* tidak bisa diklik */
         opacity: 0.6;          /* tampilan seperti disabled */
@@ -818,10 +850,10 @@
               &quot;background_slideshow_slide_transition&quot;: &quot;fade&quot;,
               &quot;background_slideshow_loop&quot;: &quot;yes&quot;,
               &quot;background_slideshow_gallery&quot;: [
-                { &quot;url&quot;: &quot;img/LNR_1639.jpg&quot; },
-                { &quot;url&quot;: &quot;img/12RP_PUTIH.jpg&quot; },
                 { &quot;url&quot;: &quot;img/5R_PUTIH.jpg&quot; },
-                { &quot;url&quot;: &quot;img/LNR_1650.jpg&quot; },
+                { &quot;url&quot;: &quot;img/12RP_PUTIH.jpg&quot; },
+                { &quot;url&quot;: &quot;img/5RP_PUTIH.jpg&quot; },
+                { &quot;url&quot;: &quot;img/LNR_1660.jpg&quot; },
                 { &quot;url&quot;: &quot;img/LNR_1669.jpg&quot; },
                 { &quot;url&quot;: &quot;img/LNR_1653.jpg&quot; }
               ]
