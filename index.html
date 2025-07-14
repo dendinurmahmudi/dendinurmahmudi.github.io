@@ -1648,7 +1648,10 @@
                             var clipboard_5 = new ClipboardJS('#dce-clipboard-btn-5');
                             clipboard_5.on('success', function(e) {
                               jQuery('#dce-clipboard-btn-5').html('Copied');
-                              return false;
+                              setTimeout(() => {
+                                jQuery('#dce-clipboard-btn-5').html('COPY number');
+                              }, 2000);
+                              // return false;
                             });
                             clipboard_5.on('error', function(e) {
                               console.log(e);
@@ -1692,7 +1695,10 @@
                             var clipboard_6 = new ClipboardJS('#dce-clipboard-btn-6');
                             clipboard_6.on('success', function(e) {
                               jQuery('#dce-clipboard-btn-6').html('Copied');
-                              return false;
+                              setTimeout(() => {
+                                jQuery('#dce-clipboard-btn-6').html('COPY number');
+                              }, 2000);
+                              // return false;
                             });
                             clipboard_6.on('error', function(e) {
                               console.log(e);
@@ -1707,10 +1713,10 @@
             </div>
             <div class="elementor-element elementor-element-67bf404 elementor-widget__width-initial wdp-sticky-section-no elementor-widget elementor-widget-text-editor" data-id="67bf404" data-element_type="widget" data-widget_type="text-editor.default">
               <div class="elementor-widget-container">
-                <p style="margin-bottom: 2px;">Hadiah fisik bisa dikirim ke alamat di bawah ya:</p>
+                <p style="margin-bottom: 2px; color: white;">Hadiah fisik bisa dikirim ke alamat di bawah ya:</p>
                 <div style="display: flex; align-items: center;">
                   <img src="img/image-house.png" class="img-fluid rounded" style="height: 4.5em; width: 5em;" alt="bca">
-                  <p style="padding-left: 15px;" id="alamat-teks">Jl. Cijeruk RT 04 RW 19 Desa Bojongsari, Kavling H Deni No. 09, Kec. Bojongsoang, Kab. Bandung, Jawa Barat, 40288</p>
+                  <p style="padding-left: 15px; color: white;" id="alamat-teks">Jl. Cijeruk RT 04 RW 19 Desa Bojongsari, Kavling Berkah H Deni No. 09, Kec. Bojongsoang, Kab. Bandung, Jawa Barat, 40288</p>
                 </div>
               </div>
             </div>
