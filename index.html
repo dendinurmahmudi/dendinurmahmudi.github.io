@@ -2893,41 +2893,41 @@
         return false;
       }
     });
-    (function () {
-      const element = new Image();
-      let devToolsDetected = false;
+    // (function () {
+    //   const element = new Image();
+    //   let devToolsDetected = false;
 
-      Object.defineProperty(element, 'id', {
-        get: function () {
-          devToolsDetected = true;
-          throw new Error("DevTools console detected");
-        }
-      });
+    //   Object.defineProperty(element, 'id', {
+    //     get: function () {
+    //       devToolsDetected = true;
+    //       throw new Error("DevTools console detected");
+    //     }
+    //   });
 
-      function detectByConsole() {
-        devToolsDetected = false;
-        console.log('%c', element);
-        setTimeout(() => {
-          if (devToolsDetected) {
-            window.location.href = "https://www.google.com";
-          }
-        }, 100);
-      }
+    //   function detectByConsole() {
+    //     devToolsDetected = false;
+    //     console.log('%c', element);
+    //     setTimeout(() => {
+    //       if (devToolsDetected) {
+    //         window.location.href = "https://www.google.com";
+    //       }
+    //     }, 100);
+    //   }
 
-      function detectBySize() {
-        const threshold = 160;
-        const w = window.outerWidth - window.innerWidth;
-        const h = window.outerHeight - window.innerHeight;
-        if (w > threshold || h > threshold) {
-          window.location.href = "https://www.google.com";
-        }
-      }
+    //   function detectBySize() {
+    //     const threshold = 160;
+    //     const w = window.outerWidth - window.innerWidth;
+    //     const h = window.outerHeight - window.innerHeight;
+    //     if (w > threshold || h > threshold) {
+    //       window.location.href = "https://www.google.com";
+    //     }
+    //   }
 
-      setInterval(() => {
-        detectByConsole();
-        detectBySize();
-      }, 1000);
-    })();
+    //   setInterval(() => {
+    //     detectByConsole();
+    //     detectBySize();
+    //   }, 1000);
+    // })();
   </script>
   </body>
 </html>
