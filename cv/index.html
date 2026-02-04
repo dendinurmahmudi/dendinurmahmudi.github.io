@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dendi Nurmahmudi | Full Stack Developer & ERP Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --primary: #3b82f6;
+            --dark-bg: #0b0f1a;
+            --card-bg: #161c2d;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--dark-bg);
+            color: #94a3b8;
+        }
+
+        .glass-nav { 
+            background: rgba(11, 15, 26, 0.8); 
+            backdrop-filter: blur(12px); 
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .gradient-text { 
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+
+        .exp-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.03);
+            transition: all 0.3s ease;
+        }
+
+        .exp-card:hover {
+            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .skill-pill {
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 2px 10px;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .bullet-point::before {
+            content: "▹";
+            color: #3b82f6;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--dark-bg); }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-extrabold tracking-tighter text-white uppercase">Dendi<span class="text-blue-500">.</span>Dev</span>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest items-center">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-500 transition">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="about" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="hero-glow top-[-10%] left-[-10%]"></div>
+        <div class="hero-glow bottom-[-10%] right-[-10%]"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-blue-500 font-bold tracking-[0.3em] uppercase text-sm mb-4">Informatics Engineer</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Full Stack <br><span class="gradient-text tracking-tighter">Developer.</span>
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+                    Full Stack Developer with <span class="text-white font-semibold">4+ years</span> of experience in web development and enterprise systems. Expert in architecting scalable ERP solutions, financial reporting, and complex system integrations.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://mail.google.com/mail/?view=cm&to=dendinurmahmudi@gmail.com" target="_blank" class="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:bg-blue-500 hover:text-white transition shadow-lg">Hire Me</a>
+                    <a href="https://wa.me/628871756292" target="_blank" class="border border-slate-700 text-white px-8 py-3 rounded-full font-bold hover:bg-slate-800 transition">WhatsApp</a>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                <div class="exp-card p-6 rounded-2xl">
+                    <span class="text-3xl font-extrabold text-white">3.9K+</span>
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500 mt-1">Monthly Txns</p>
+                    <p class="text-slate-500 text-xs mt-2 italic">Managed in PipeSys ERP</p>
+                </div>
+                <div class="exp-card p-6 rounded-2xl">
+                    <span class="text-3xl font-extrabold text-white">6.4K+</span>
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500 mt-1">Active Employees</p>
+                    <p class="text-slate-500 text-xs mt-2 italic">Handled by HRIS</p>
+                </div>
+                <div class="exp-card p-6 rounded-2xl">
+                    <span class="text-3xl font-extrabold text-white">593K+</span>
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500 mt-1">Entry Codes</p>
+                    <p class="text-slate-500 text-xs mt-2 italic">Lucky Draw Engine</p>
+                </div>
+                <div class="exp-card p-6 rounded-2xl">
+                    <span class="text-3xl font-extrabold text-white">5 Min</span>
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-500 mt-1">Data Sync</p>
+                    <p class="text-slate-500 text-xs mt-2 italic">Real-time attendance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Experience -->
+    <section id="experience" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-16 flex items-center gap-4">
+                <span class="h-px w-12 bg-blue-500"></span> 
+                Professional Experience
+            </h2>
+
+            <div class="space-y-16">
+                <!-- Current Role -->
+                <div class="relative pl-8 border-l-2 border-blue-500/30" data-aos="fade-up">
+                    <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-0 shadow-[0_0_15px_#3b82f6]"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Web Developer</h3>
+                            <p class="text-blue-400 font-semibold uppercase tracking-wide text-sm">EDUTAX INDONESIA PRIMA, PT | Bandung</p>
+                        </div>
+                        <span class="text-slate-500 font-mono text-sm mt-2 md:mt-0 italic">Aug 2025 - Present</span>
+                    </div>
+
+                    <div class="grid lg:grid-cols-5 gap-8">
+                        <div class="lg:col-span-3">
+                            <ul class="space-y-4 text-slate-400 pl-4">
+                                <li class="bullet-point">Developed <span class="text-white"><a href="https://xtrax.id/" target="_blank">xtrax.id</a> (Accounting Information System) SaaS</span> for taxation and financial reporting.</li>
+                                <li class="bullet-point">Developed <span class="text-white"><a href="https://xtrax.id/harta" target="_blank">xtrax.id/harta</a> (Asset Analysis) SaaS</span> for reporting the fairness of income against assets.</li>
+                                <li class="bullet-point">Built core accounting modules with financial report outputs: <span class="text-slate-200">Journal, General Ledger, Trial Balance, Profit & Loss, and Balance Sheet.</span></li>
+                                <li class="bullet-point">Implemented a <span class="text-white">Multi-tenant Architecture</span> with consultant management, supporting complex licensing flows (free trial, monthly extensions, user-count upgrades).</li>
+                                <li class="bullet-point">Integrated <span class="text-white">Xendit Payment Gateway</span> for automated subscription billing.</li>
+                                <li class="bullet-point">Optimized interactivity using jQuery for client-server processing and designed UI with Bootstrap.</li>
+                            </ul>
+                        </div>
+                        <div class="lg:col-span-2 space-y-3">
+                            <div class="exp-card p-5 rounded-xl border border-blue-500/10">
+                                <p class="text-xs font-bold text-blue-400 uppercase mb-2">Core Tech</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-pill">PHP 8.3</span> <span class="skill-pill">Laravel 11</span> 
+                                    <span class="skill-pill">MySQL</span> <span class="skill-pill">Xendit API</span>
+                                    <span class="skill-pill">Multi-tenancy</span> <span class="skill-pill">jQuery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Role -->
+                <div class="relative pl-8 border-l-2 border-slate-800" data-aos="fade-up">
+                    <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-0"></div>
+                    <div class="flex flex-col md:flex-row justify-between mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Web Developer | SAP & Odoo Programmer</h3>
+                            <p class="text-blue-400 font-semibold uppercase tracking-wide text-sm">SISTEM ANUGRAH PRIMA, PT | Bandung</p>
+                        </div>
+                        <span class="text-slate-500 font-mono text-sm mt-2 md:mt-0 italic">Oct 2021 - Aug 2025</span>
+                    </div>
+
+                    <div class="space-y-8">
+                        <!-- Subsection: Web Dev -->
+                        <div class="exp-card p-6 rounded-2xl">
+                            <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-globe text-blue-500 text-sm"></i> Full Stack Web & ERP Development
+                            </h4>
+                            <div class="grid md:grid-cols-2 gap-8 text-sm">
+                                <ul class="space-y-3 text-slate-400 pl-4">
+                                    <li class="bullet-point">Developed <span class="text-white font-semibold">PipeSys ERP</span>: Adopted by 4 companies, processing 3,900+ monthly transactions for 110+ users.</li>
+                                    <li class="bullet-point">Built <span class="text-white font-semibold">Paperless HRIS</span>: Managed 6,417 employees. Processed 9,329 submissions (leave, overtime, warning letters) in a single month.</li>
+                                    <li class="bullet-point">Developed <span class="text-white font-semibold">Barcode Lucky Draw Engine</span>: Managed 593,617 unique codes with real-time live draw visualization for a soybean factory in Solo.</li>
+                                </ul>
+                                <ul class="space-y-3 text-slate-400 pl-4">
+                                    <li class="bullet-point">Integrated <span class="text-white">BCA SNAP API</span> for kbc.or.id with real-time validation and automated callbacks.</li>
+                                    <li class="bullet-point">Architected <span class="text-white">Automated Email Engine</span> for "Raja Derek" (towing service), automating PPh 23 tax reminders and travel summary receipts.</li>
+                                    <li class="bullet-point">Automated <span class="text-white">5-minute data sync</span> between web-based HRIS and desktop attendance/payroll applications.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Subsection: SAP & Odoo -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="exp-card p-6 rounded-2xl border-l-4 border-blue-600">
+                                <h4 class="text-white font-bold mb-3 uppercase text-xs tracking-widest">SAP Business One Add-ons (C#)</h4>
+                                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                    Customized financial reporting for <span class="text-slate-200">Trinity Optima Production</span>, including AR/AP Aging with DPP & VAT calculations, and specialized Royalty reports using <span class="text-blue-400 font-semibold">SAP HANA</span> & Crystal Reports.
+                                </p>
+                            </div>
+                            <div class="exp-card p-6 rounded-2xl border-l-4 border-purple-600">
+                                <h4 class="text-white font-bold mb-3 uppercase text-xs tracking-widest">Odoo Development (Python)</h4>
+                                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                    Enhanced Project & Timesheet modules with automatic activity logging, custom filters, and tailored dashboards to streamline operational efficiency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Summary -->
+    <section id="skills" class="py-24 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-16">Technical Stack</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-8 exp-card rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-code text-blue-500 text-2xl mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">Languages</h3>
+                    <p class="text-xs text-slate-500 uppercase font-bold">PHP, JS, Python, C#, SQL</p>
+                </div>
+                <div class="p-8 exp-card rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-layer-group text-blue-500 text-2xl mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">Frameworks</h3>
+                    <p class="text-xs text-slate-500 uppercase font-bold">Laravel, CI, jQuery, Bootstrap</p>
+                </div>
+                <div class="p-8 exp-card rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-database text-blue-500 text-2xl mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">Databases</h3>
+                    <p class="text-xs text-slate-500 uppercase font-bold">SQL Server, MySQL, SAP HANA</p>
+                </div>
+                <div class="p-8 exp-card rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-gears text-blue-500 text-2xl mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">ERP Specialist</h3>
+                    <p class="text-xs text-slate-500 uppercase font-bold">SAP B1, Odoo, Crystal Reports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-24 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-white mb-8">Ready to Scale Your Systems?</h2>
+            <p class="text-slate-400 mb-12 text-lg italic">"Solving business complexity through clean, scalable, and efficient code."</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-16">
+                <a href="https://mail.google.com/mail/?view=cm&to=dendinurmahmudi@gmail.com" target="_blank" class="flex items-center justify-center gap-3 bg-slate-800/50 px-8 py-4 rounded-xl border border-slate-700 hover:border-blue-500 transition text-white">
+                    <i class="fa-solid fa-envelope"></i> dendinurmahmudi@gmail.com
+                </a>
+                <a href="tel:08871756292" target="_blank" class="flex items-center justify-center gap-3 bg-slate-800/50 px-8 py-4 rounded-xl border border-slate-700 hover:border-blue-500 transition text-white">
+                    <i class="fa-solid fa-phone"></i> 0887 1756 292
+                </a>
+            </div>
+
+            <div class="text-slate-600 text-sm font-medium">
+                <p class="mb-2">Bandung, Indonesia | Bachelor of Informatics Engineering</p>
+                <p>© 2026 Dendi Nurmahmudi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+    </script>
+</body>
+</html>
