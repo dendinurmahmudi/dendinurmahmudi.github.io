@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurnia Fried Chicken | Renyahnya Sampai ke Tulang!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-800 text-orange-600 tracking-tighter">AYAM<span class="text-slate-800">KRIUK.</span></div>
+            <a href="#order" class="bg-orange-600 text-white px-6 py-2 rounded-full font-bold hover:bg-orange-700 transition">Pesan Sekarang</a>
+        </div>
+    </nav>
+
+    <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-4">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <span class="bg-orange-600 px-4 py-1 rounded-full text-sm font-bold mb-4 inline-block">PROMO TERBATAS!</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Renyah Di Luar,<br><span class="text-orange-500">Juicy Di Dalam!</span></h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-slate-200">Rahasia bumbu rempah pilihan yang meresap sempurna. Sekali gigit, nggak mau berhenti!</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-orange-600 hover:bg-orange-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105">Lihat Menu</a>
+                <a href="#testi" class="bg-white hover:bg-slate-100 text-slate-900 px-10 py-4 rounded-xl font-bold text-lg transition-all">Testimoni</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-down">
+            <h2 class="text-3xl font-bold text-slate-800">Kenapa Harus AyamKriuk?</h2>
+            <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-orange-500" data-aos="flip-left" data-aos-delay="100">
+                <div class="text-4xl mb-4">🍗</div>
+                <h3 class="text-xl font-bold mb-2">Ayam Segar</h3>
+                <p class="text-slate-600">Bukan ayam beku! Kami menggunakan ayam segar setiap hari dari peternak lokal.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-orange-500" data-aos="flip-left" data-aos-delay="300">
+                <div class="text-4xl mb-4">🌿</div>
+                <h3 class="text-xl font-bold mb-2">12 Rempah Rahasia</h3>
+                <p class="text-slate-600">Racikan bumbu yang sudah diuji ribuan kali untuk lidah orang Indonesia.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-orange-500" data-aos="flip-left" data-aos-delay="500">
+                <div class="text-4xl mb-4">🔥</div>
+                <h3 class="text-xl font-bold mb-2">Goreng Dadakan</h3>
+                <p class="text-slate-600">Selalu disajikan panas dan renyah. Tidak ada stok lama di etalase kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 bg-orange-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12">Pilih Paket <span class="text-orange-600">Favoritmu</span></h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group" data-aos="zoom-in">
+                    <div class="h-56 bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Paket Jomblo Happy</h3>
+                        <p class="text-slate-500 text-sm mb-4">1 Nasi + 1 Ayam Dada/Paha Atas + Es Teh</p>
+                        <div class="text-2xl font-bold text-orange-600 mb-4">Rp 25.000</div>
+                        <button class="w-full border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl overflow-hidden shadow-2xl group border-2 border-orange-500 transform scale-105 z-10" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="bg-orange-500 text-white py-1 text-sm font-bold uppercase">Terlaris 🔥</div>
+                    <div class="h-56 bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1569058242253-92a9c71f9867?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Paket Berdua Seru</h3>
+                        <p class="text-slate-500 text-sm mb-4">2 Nasi + 2 Ayam + 2 Minum + Kentang</p>
+                        <div class="text-2xl font-bold text-orange-600 mb-4">Rp 45.000</div>
+                        <button class="w-full bg-orange-600 text-white font-bold py-2 rounded-lg hover:bg-orange-700 transition shadow-lg shadow-orange-200">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="h-56 bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Paket Keluarga Mukbang</h3>
+                        <p class="text-slate-500 text-sm mb-4">5 Nasi + 5 Ayam + 1 Botol Minum 1L</p>
+                        <div class="text-2xl font-bold text-orange-600 mb-4">Rp 110.000</div>
+                        <button class="w-full border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="order" class="bg-slate-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Lapar Berat? Jangan Ditahan!</h2>
+            <p class="text-slate-400 mb-8">Klik tombol di bawah untuk pesan via WhatsApp (Free Ongkir 2km!)</p>
+            <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-12 py-4 rounded-full font-bold text-xl inline-flex items-center gap-2 transition-transform hover:scale-110">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.747-2.874-2.512-2.96-2.626-.087-.114-.708-.941-.708-1.793 0-.852.449-1.273.608-1.446.159-.173.346-.217.461-.217.115 0 .23 0 .331.005.109.004.258-.041.404.31.145.352.497 1.214.541 1.3.043.085.072.184.015.303-.058.12-.086.19-.173.288-.086.1-.188.222-.269.302-.097.098-.2.204-.086.397.114.195.505.833 1.082 1.348.743.664 1.37.87 1.564.966.194.097.307.081.422-.051.114-.133.491-.571.621-.766.13-.195.259-.163.43-.1.172.063 1.092.515 1.278.608.187.093.31.14.354.214.045.075.045.432-.1.837z"/></svg>
+                Pesan via WhatsApp
+            </a>
+            <p class="mt-10 text-slate-500 text-sm">© 2024 AyamKriuk Indonesia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animasi hanya jalan sekali saat scroll
+            duration: 800,
+        });
+    </script>
+</body>
+</html>

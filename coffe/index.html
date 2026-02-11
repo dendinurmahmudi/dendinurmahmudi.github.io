@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPOS Cafe - Brewing Digital Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --coffee-dark: #1c1917;
+            --coffee-primary: #78350f;
+            --coffee-light: #fef3c7;
+            --coffee-accent: #d97706;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #0c0a09;
+        }
+        .glow-button {
+            box-shadow: 0 0 20px rgba(120, 53, 15, 0.3);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(120, 53, 15, 0.5);
+            transform: translateY(-2px);
+        }
+        .glass-card {
+            background: rgba(28, 25, 23, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(120, 53, 15, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(to bottom right, #fef3c7 30%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+        .coffee-grain {
+            background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+        }
+    </style>
+</head>
+<body class="text-stone-200 overflow-x-hidden coffee-grain">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 px-6 py-6 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass-card px-8 py-4 rounded-full border border-stone-800">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-amber-900 rounded-full flex items-center justify-center shadow-lg border border-amber-700/50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-200" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486z" />
+                    </svg>
+                </div>
+                <span class="font-bold tracking-tight text-xl text-stone-50">BeanPOS<span class="text-amber-600">.</span></span>
+            </div>
+            <div class="hidden md:flex gap-10 text-sm font-semibold text-stone-400">
+                <a href="#" class="hover:text-amber-500 transition-colors uppercase tracking-widest text-[10px]">Fitur Utama</a>
+                <a href="#" class="hover:text-amber-500 transition-colors uppercase tracking-widest text-[10px]">Manajemen Meja</a>
+                <a href="#" class="hover:text-amber-500 transition-colors uppercase tracking-widest text-[10px]">Harga</a>
+            </div>
+            <button class="bg-amber-700 text-stone-100 px-7 py-2.5 rounded-full text-xs font-bold glow-button transition-all">
+                Coba Gratis
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center px-6 pt-32 overflow-hidden">
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-amber-900/20 blur-[150px] rounded-full"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-orange-900/10 blur-[150px] rounded-full"></div>
+
+        <div class="relative z-10 max-w-5xl text-center" data-aos="fade-up">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-900/50 bg-amber-950/30 mb-10">
+                <span class="text-[10px] font-black uppercase tracking-[0.3em] text-amber-500">The Barista's Choice</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-[7rem] font-bold tracking-tighter mb-10 leading-[0.9] text-gradient">
+                Sempurnakan <br> Setiap Seduhan.
+            </h1>
+            
+            <p class="text-lg md:text-xl text-stone-400 mb-14 max-w-2xl mx-auto leading-relaxed font-light">
+                Kelola pesanan, inventori biji kopi, hingga loyalitas pelanggan dalam satu sistem POS yang estetik dan intuitif.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-5 justify-center mb-24" data-aos="fade-up" data-aos-delay="200">
+                <button class="bg-stone-100 text-stone-900 px-10 py-5 rounded-full font-bold hover:bg-amber-100 transition-all shadow-xl shadow-stone-100/5">
+                    Mulai Sekarang
+                </button>
+                <button class="glass-card text-stone-100 px-10 py-5 rounded-full font-bold hover:bg-stone-800 transition-all">
+                    Lihat Demo
+                </button>
+            </div>
+        </div>
+
+        <!-- Dashboard Cafe Preview -->
+        <div class="relative w-full max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="relative rounded-t-[3rem] border border-stone-800 bg-stone-900/60 p-3 shadow-2xl overflow-hidden">
+                <div class="bg-stone-950 rounded-[2rem] border border-stone-800/50 min-h-[500px] flex shadow-inner overflow-hidden">
+                    <div class="w-20 md:w-60 border-r border-stone-900/50 p-6 hidden sm:block">
+                        <div class="space-y-6">
+                            <div class="h-10 bg-amber-900/20 rounded-xl border border-amber-900/20"></div>
+                            <div class="space-y-3 pt-4">
+                                <div class="h-3 bg-stone-800 rounded w-full"></div>
+                                <div class="h-3 bg-stone-800 rounded w-4/5"></div>
+                                <div class="h-3 bg-stone-800 rounded w-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-1 p-8">
+                        <div class="flex justify-between items-end mb-12">
+                            <div>
+                                <h3 class="text-2xl font-bold text-stone-100 mb-1">Morning Dashboard</h3>
+                                <p class="text-xs text-stone-500 font-medium uppercase tracking-widest">Jumat, 6 Februari 2026</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="w-10 h-10 rounded-full bg-stone-900 border border-stone-800"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                            <div class="bg-stone-900/40 border border-stone-800/50 rounded-2xl p-6">
+                                <p class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-4">Cup Terjual</p>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-3xl font-bold text-stone-100">142</span>
+                                    <span class="text-xs text-green-500 font-bold">+12%</span>
+                                </div>
+                            </div>
+                            <div class="bg-stone-900/40 border border-stone-800/50 rounded-2xl p-6">
+                                <p class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-4">Total Revenue</p>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-3xl font-bold text-stone-100">8.4M</span>
+                                    <span class="text-xs text-stone-500">IDR</span>
+                                </div>
+                            </div>
+                            <div class="bg-stone-900/40 border border-stone-800/50 rounded-2xl p-6">
+                                <p class="text-[10px] uppercase tracking-widest text-stone-500 font-bold mb-4">Terlaris</p>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xl font-bold text-amber-500">Gayo Wine</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="aspect-square bg-stone-900/30 rounded-2xl border border-stone-800/50 flex items-center justify-center flex-col p-4">
+                                <div class="w-10 h-10 bg-amber-900/20 rounded-full mb-3"></div>
+                                <div class="h-2 w-12 bg-stone-800 rounded mb-1"></div>
+                                <div class="h-2 w-8 bg-stone-900 rounded"></div>
+                            </div>
+                            <div class="aspect-square bg-stone-900/30 rounded-2xl border border-stone-800/50 flex items-center justify-center flex-col p-4">
+                                <div class="w-10 h-10 bg-stone-800/50 rounded-full mb-3"></div>
+                                <div class="h-2 w-12 bg-stone-800 rounded mb-1"></div>
+                                <div class="h-2 w-8 bg-stone-900 rounded"></div>
+                            </div>
+                            <div class="aspect-square bg-stone-900/30 rounded-2xl border border-stone-800/50 flex items-center justify-center flex-col p-4">
+                                <div class="w-10 h-10 bg-stone-800/50 rounded-full mb-3"></div>
+                                <div class="h-2 w-12 bg-stone-800 rounded mb-1"></div>
+                                <div class="h-2 w-8 bg-stone-900 rounded"></div>
+                            </div>
+                            <div class="aspect-square bg-stone-900/30 rounded-2xl border border-stone-800/50 flex items-center justify-center flex-col p-4">
+                                <div class="w-10 h-10 bg-stone-800/50 rounded-full mb-3"></div>
+                                <div class="h-2 w-12 bg-stone-800 rounded mb-1"></div>
+                                <div class="h-2 w-8 bg-stone-900 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Order Card -->
+                <div class="absolute -bottom-10 -right-4 md:right-10 glass-card p-6 rounded-3xl shadow-2xl animate-float z-20">
+                    <div class="flex items-center gap-5">
+                        <div class="w-14 h-14 bg-amber-700 text-stone-100 rounded-2xl flex items-center justify-center shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-amber-500 font-black uppercase tracking-widest mb-1">Pesanan Baru</p>
+                            <p class="text-lg font-bold text-white leading-none">Latte x2, Croissant x1</p>
+                            <p class="text-[10px] text-stone-500 mt-2 font-medium">Meja #04 • Proses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Fixed Grid) -->
+    <section class="py-40 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl font-bold text-stone-100 mb-8 leading-tight">Dibuat Oleh Barista <br> Untuk Pemilik Kafe</h2>
+                    <p class="text-stone-400 text-lg mb-10 leading-relaxed">Kami memahami kerumitan di balik meja bar. Dari manajemen bahan baku hingga sistem pembayaran yang cepat.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-amber-900/30 flex items-center justify-center text-amber-500 font-bold">✓</div>
+                            <span class="text-stone-300 font-medium">Manajemen Meja & QR Order</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-amber-900/30 flex items-center justify-center text-amber-500 font-bold">✓</div>
+                            <span class="text-stone-300 font-medium">Notifikasi Kitchen & Bar via Tablet</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-amber-900/30 flex items-center justify-center text-amber-500 font-bold">✓</div>
+                            <span class="text-stone-300 font-medium">Loyalty Program (Point & Reward)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Fixed Grid Layout -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-left">
+                    <div class="glass-card p-8 rounded-3xl">
+                        <div class="w-10 h-10 bg-amber-900/20 rounded-lg flex items-center justify-center text-amber-500 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+                        </div>
+                        <h4 class="text-stone-100 font-bold mb-3">Inventory</h4>
+                        <p class="text-sm text-stone-500 leading-relaxed">Pantau penggunaan gramasi kopi setiap cup secara akurat.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl">
+                        <div class="w-10 h-10 bg-amber-900/20 rounded-lg flex items-center justify-center text-amber-500 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                        </div>
+                        <h4 class="text-stone-100 font-bold mb-3">Finance</h4>
+                        <p class="text-sm text-stone-500 leading-relaxed">Laporan harian otomatis terkirim ke WhatsApp owner.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl">
+                        <div class="w-10 h-10 bg-amber-900/20 rounded-lg flex items-center justify-center text-amber-500 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5" /></svg>
+                        </div>
+                        <h4 class="text-stone-100 font-bold mb-3">Barista UI</h4>
+                        <p class="text-sm text-stone-500 leading-relaxed">Tampilan kasir yang simpel untuk kecepatan transaksi.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl">
+                        <div class="w-10 h-10 bg-amber-900/20 rounded-lg flex items-center justify-center text-amber-500 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                        </div>
+                        <h4 class="text-stone-100 font-bold mb-3">Multi-Outlet</h4>
+                        <p class="text-sm text-stone-500 leading-relaxed">Kelola semua cabang Anda dalam satu genggaman dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-32 px-6">
+        <div class="max-w-4xl mx-auto bg-amber-900/10 border border-amber-900/30 p-16 rounded-[4rem] text-center relative overflow-hidden" data-aos="zoom-in">
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-amber-700/10 blur-[80px] rounded-full"></div>
+            <h2 class="text-4xl md:text-5xl font-bold text-stone-50 text-gradient mb-8 leading-tight">Siap Menaikkan Level <br> Kafe Anda?</h2>
+            <p class="text-stone-400 mb-12 text-lg">Gabung dengan ratusan pemilik kafe yang telah beralih ke masa depan digital.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-amber-700 hover:bg-amber-600 text-stone-100 px-12 py-5 rounded-full font-bold transition-all shadow-2xl shadow-amber-900/20">Mulai Trial 14 Hari</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 px-6 border-t border-stone-900/50 text-center">
+        <div class="flex items-center justify-center gap-2 mb-8">
+            <div class="w-6 h-6 bg-amber-900 rounded-full flex items-center justify-center font-bold text-[10px] text-white">B</div>
+            <span class="font-bold text-stone-100 uppercase tracking-tighter">BeanPOS</span>
+        </div>
+        <p class="text-stone-600 text-[10px] font-bold uppercase tracking-[0.3em]">© 2026 BeanPOS - Part of Barokah Jaya Group.</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 30) {
+                nav.classList.add('px-0', 'py-4');
+                nav.children[0].classList.add('rounded-none', 'max-w-full', 'border-x-0', 'bg-stone-950/90');
+            } else {
+                nav.classList.remove('px-0', 'py-4');
+                nav.children[0].classList.remove('rounded-none', 'max-w-full', 'border-x-0', 'bg-stone-950/90');
+            }
+        });
+    </script>
+</body>
+</html>
