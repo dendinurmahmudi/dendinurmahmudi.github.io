@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation - Website Desa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+                background-color: white !important;
+            }
+            .no-print {
+                display: none;
+            }
+            @page {
+                margin: 0;
+                size: A4;
+            }
+            .page {
+                margin: 0 !important;
+                box-shadow: none !important;
+                height: 297mm; /* Fixed height for A4 */
+            }
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 10px auto;
+            padding: 12mm 15mm; /* Reduced padding to fit 1 page */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .accent-border {
+            border-left: 4px solid #1e3a8a;
+        }
+
+        table thead th {
+            background-color: #1e3a8a !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page shadow-2xl">
+        <!-- Header -->
+        <div class="flex justify-between items-start border-b-2 border-gray-100 pb-4">
+            <div>
+                <h1 class="text-2xl font-bold text-blue-900 uppercase tracking-tighter">Quotation</h1>
+                <p class="text-gray-500 mt-0.5 uppercase text-[10px] font-semibold tracking-widest">Nomor: 042/DN/WEB-DESA/II/2026</p>
+                <p class="text-gray-500 text-[10px]">Tanggal Terbit: 16 Februari 2026</p>
+            </div>
+            <div class="text-right">
+                <h2 class="font-bold text-base text-blue-900 leading-none">Dendi Nurmahmudi</h2>
+                <p class="text-xs text-gray-600 font-medium">Freelance Web Developer</p>
+                <p class="text-[10px] text-gray-500">Bandung, Indonesia</p>
+            </div>
+        </div>
+
+        <!-- Client Info -->
+        <div class="mt-5 grid grid-cols-2 gap-6">
+            <div class="accent-border pl-3">
+                <h3 class="text-[9px] uppercase font-bold text-gray-400 tracking-widest">Ditujukan Untuk:</h3>
+                <p class="font-bold text-gray-800 mt-0.5 text-base">Bpk. Solihin</p>
+                <p class="text-[11px] text-gray-600 leading-snug">
+                    Kp. Cikenung, RT.003 RW.004, Desa Tamanjaya,<br>
+                    Keacamatan Gununghalu, Kabupaten Bandung Barat, Jawa Barat
+                </p>
+            </div>
+            <div class="text-right bg-blue-50 p-3 rounded-lg border border-blue-100">
+                <h3 class="text-[9px] uppercase font-bold text-blue-400 tracking-widest">Proyek:</h3>
+                <p class="font-bold text-blue-900 mt-0.5 text-xs uppercase leading-tight">Pengembangan Website Desa & Portal Informasi Publik</p>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="mt-4">
+            <p class="text-[11px] text-gray-700 leading-relaxed italic border-l-2 border-gray-200 pl-3">
+                "Proposal penawaran harga untuk transformasi digital Desa guna meningkatkan transparansi, pelayanan publik, dan publikasi potensi desa."
+            </p>
+        </div>
+
+        <!-- Table -->
+        <table class="w-full mt-5 text-left border-collapse">
+            <thead>
+                <tr class="bg-blue-900 text-white text-[10px] uppercase tracking-wider">
+                    <th class="p-3 rounded-tl-lg w-1/4">Layanan</th>
+                    <th class="p-3">Deskripsi Fitur & Modul</th>
+                    <th class="p-3 text-right rounded-tr-lg w-1/4">Biaya (IDR)</th>
+                </tr>
+            </thead>
+            <tbody class="text-[11px]">
+                <tr class="border-b border-gray-100">
+                    <td class="p-3 font-semibold text-gray-800">Core Website & Profil</td>
+                    <td class="p-3 text-gray-600">Desain Responsif, CMS Berita, Sejarah, Visi Misi, Struktur, & Galeri.</td>
+                    <td class="p-3 text-right">8.000.000</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                    <td class="p-3 font-semibold text-gray-800">Infografis & Transparansi</td>
+                    <td class="p-3 text-gray-600">Visualisasi Data IDM, SDGs Desa, & Grafik APBDes (Anggaran).</td>
+                    <td class="p-3 text-right">5.000.000</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                    <td class="p-3 font-semibold text-gray-800">Layanan Publik & Ekonomi</td>
+                    <td class="p-3 text-gray-600">Modul PPID (Dokumen Publik) & Katalog Belanja UMKM Desa.</td>
+                    <td class="p-3 text-right">2.500.000</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                    <td class="p-3 font-semibold text-gray-800">Implementasi & Pelatihan</td>
+                    <td class="p-3 text-gray-600">Setup Server, Domain .desa.id, Migrasi Data, & Pelatihan Admin.</td>
+                    <td class="p-3 text-right">3.000.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="text-blue-900 bg-blue-50 font-bold">
+                    <td colspan="2" class="p-3 text-right text-[11px] uppercase tracking-wider">Total Investasi</td>
+                    <td class="p-3 text-right text-base">Rp 18.500.000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Recurring Fee Info -->
+        <div class="mt-4 bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <h4 class="font-bold text-gray-800 text-[9px] uppercase tracking-widest mb-1">Biaya Operasional Tahunan (Mulai Tahun ke-2)</h4>
+            <div class="flex justify-between items-center border-t border-gray-200 pt-1.5 mt-1.5">
+                <p class="text-[10px] text-gray-600 pr-6 leading-tight">
+                    <strong>Annual Managed Service:</strong> Hosting Cloud, Domain .desa.id, SSL, Backup rutin, & Maintenance keamanan berkala.
+                </p>
+                <p class="font-bold text-blue-900 text-right min-w-[120px] text-xs">Rp 3.500.000 / thn</p>
+            </div>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="mt-5 grid grid-cols-2 gap-6 text-[10px] leading-tight">
+            <div>
+                <h5 class="font-bold text-gray-700 mb-1 uppercase text-[9px]">Syarat & Ketentuan:</h5>
+                <ul class="list-decimal ml-4 text-gray-600 space-y-0.5">
+                    <li>DP minimal 50% untuk memulai pengerjaan proyek.</li>
+                    <li>Pelunasan dilakukan setelah serah terima sistem.</li>
+                    <li><strong>Pasca Persetujuan:</strong> Akan diterbitkan <strong>Kontrak Kerja Formal</strong> yang memuat rincian teknis (SLA) & hak kekayaan intelektual.</li>
+                </ul>
+            </div>
+            <div class="bg-yellow-50 p-2.5 rounded border border-yellow-100">
+                <h5 class="font-bold text-yellow-800 mb-0.5 uppercase text-[9px]">Catatan Persetujuan:</h5>
+                <p class="text-yellow-700 leading-snug">
+                    Tanda tangani dokumen ini sebagai persetujuan awal. Kirimkan kembali file ini untuk proses penerbitan Surat Perjanjian Kerja (SPK).
+                </p>
+            </div>
+        </div>
+
+        <!-- Signature Area -->
+        <div class="mt-auto pt-6 grid grid-cols-2 gap-10 text-center">
+            <div class="flex flex-col items-center">
+                <p class="text-[10px] text-gray-500 uppercase font-bold">Penyedia Jasa,</p>
+                <img src="TTD.png" alt="" style="width: 7em;">
+                <div class="w-40 border-t border-gray-800 pt-1.5">
+                    <p class="font-bold text-gray-800 text-xs">Dendi Nurmahmudi</p>
+                    <p class="text-[9px] text-gray-500">Freelance Web Developer</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <p class="text-[10px] text-gray-500 uppercase font-bold" style="margin-bottom: 8.7em;">Menyetujui (Klien),</p>
+                <div class="w-40 border-t border-gray-800 pt-1.5 text-center">
+                    <p class="font-bold text-gray-800 text-xs">Bpk. Solihin</p>
+                    <p class="text-[9px] text-gray-500 uppercase">Pihak Desa Tamanjaya</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-6 border-t border-gray-100 pt-3 text-center">
+            <p class="text-[9px] text-gray-400 italic font-medium tracking-tight">Dokumen ini merupakan penawaran resmi dan sah secara hukum sebagai tahap awal kerjasama profesional.</p>
+        </div>
+    </div>
+
+</body>
+</html>

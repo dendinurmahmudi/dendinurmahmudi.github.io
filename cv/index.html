@@ -137,8 +137,8 @@
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
                 <h2 class="text-blue-500 font-bold tracking-[0.3em] uppercase text-sm mb-4">Informatics Engineer</h2>
-                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-                    Full Stack <br><span class="gradient-text tracking-tighter">Developer.</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 h-[2.5em] md:h-[2em]">
+                    Full Stack <br><span id="typing" class="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent tracking-tighter">Developer.</span>
                 </h1>
                 <p class="text-slate-400 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
                     Full Stack Developer with <span class="text-white font-semibold">4+ years</span> of experience in web development and enterprise systems. Expert in architecting scalable ERP solutions, financial reporting, and complex system integrations.
@@ -325,5 +325,45 @@
     <script>
         AOS.init({ once: true, duration: 800 });
     </script>
+    <script>
+const texts = ["Developer.", "Engineer.", "Programmer.", "Freelancer."];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingSpeed = 80;
+const deletingSpeed = 50;
+const delayAfterTyping = 1200;
+
+const typingElement = document.getElementById("typing");
+
+function typeEffect() {
+    const currentText = texts[textIndex];
+
+    if (!isDeleting) {
+        // Typing
+        typingElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+            setTimeout(() => isDeleting = true, delayAfterTyping);
+        }
+    } else {
+        // Deleting
+        typingElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+        }
+    }
+
+    const speed = isDeleting ? deletingSpeed : typingSpeed;
+    setTimeout(typeEffect, speed);
+}
+
+typeEffect();
+</script>
 </body>
 </html>
